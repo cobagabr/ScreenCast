@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="refresh" content="5">
+<head>
+    <meta charset="UTF-8">
+    <title>Cobabe Screen Share</title>
+</head>
+<body>
+<h1>Welcome to Cobabe's Screen Sharing Site</h1>
+<!--<img th:src="@{${'/Screen/' + fileName}}" alt="Current Screen of Mr. Cobabe "> the more recent working method-->
+<!--<img th:src="@{/Screen/screenshot.png}" alt="Current Screen of Mr. Cobabe " th:alt="${fileName}">-->
+<img th:attr="src=@{${picture}}"  > alt="this probably won't work">
+</body>
+</html>
